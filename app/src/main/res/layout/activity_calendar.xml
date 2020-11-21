@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calendar">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/backgroundButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:backgroundTint="#ffffff"
+        app:strokeColor="#FDD6B7"
+        app:strokeWidth="10dp"
+        />
+
+    <Button
+        android:id="@+id/missionButton"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:translationY="55dp"
+        android:backgroundTint="#FDD6B7"
+        android:text="Weekly Harvest Mission"
+        android:drawableLeft="@mipmap/pot"/>
+
+    <Button
+    android:id="@+id/pointsButton"
+    android:layout_width="400dp"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:clickable="false"
+    android:translationY="165dp"
+    android:backgroundTint="#EAEAEA"
+    android:text="Points Button "
+    android:drawableLeft="@mipmap/level"/>
+
+    <Button
+        android:id="@+id/gardenButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="260dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:background="@android:color/transparent"
+        android:translationZ="10dp"
+        android:drawableLeft="@mipmap/garden"/>
+
+    <Button
+        android:id="@+id/homeButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="25dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/home"/>
+
+    <Button
+        android:id="@+id/challengeButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="100dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/mission"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:translationZ="10dp"
+        android:drawableLeft="@mipmap/upload"
+        android:translationY="265dp" />
+
+    <Button
+        android:id="@+id/peopleButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:translationX="335dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/friends"/>
+
+
+
+    <!-- Add CalenderView to display the Calender -->
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:translationY="50dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="#EAEAEA"
+        app:compactCalendarTextColor="#000000"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#0066ff"
+        app:compactCalendarCurrentDayBackgroundColor="#99ccff"
+        app:compactCalendarMultiEventIndicatorColor="#fff"
+        app:compactCalendarEventIndicatorStyle="fill_large_indicator"
+        app:compactCalendarCurrentDayIndicatorStyle="no_fill_large_indicator"
+        />
+
+    <TextView
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Month!"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+</RelativeLayout>

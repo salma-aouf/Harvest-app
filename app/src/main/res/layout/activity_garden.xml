@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Garden">
+
+    <com.google.android.material.button.MaterialButton
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:id="@+id/backgroundButton"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:backgroundTint="#ffffff"
+        app:strokeColor="#FDD6B7"
+        app:strokeWidth="10dp"
+        />
+
+    <Button
+        android:id="@+id/gardenButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="260dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:background="@android:color/transparent"
+        android:translationZ="10dp"
+        android:drawableLeft="@mipmap/garden"/>
+
+    <Button
+        android:id="@+id/calendarButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="25dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/home"/>
+
+    <Button
+        android:id="@+id/challengeButton"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:translationX="100dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/mission"/>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:translationZ="10dp"
+        android:drawableLeft="@mipmap/upload"
+        android:translationY="265dp" />
+
+    <Button
+        android:id="@+id/peopleButton"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:translationX="335dp"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:translationY="265dp"
+        android:translationZ="10dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@mipmap/friends"/>
+
+</RelativeLayout>
