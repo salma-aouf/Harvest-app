@@ -1,5 +1,6 @@
 package com.example.harvest_calendar;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -52,6 +53,11 @@ public class Garden extends AppCompatActivity {
         setContentView(R.layout.activity_garden);
 
         calendar = (Button) findViewById(R.id.calendarButton);
+
+        final ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayHomeAsUpEnabled(false);
+
+        actionBar.setTitle("Hi, userid");
 
         RelativeLayout relativeLayout = findViewById(R.id.gardenScene);
         relativeLayout.setBackgroundColor(Color.rgb(139, 69, 19));
