@@ -1,0 +1,10 @@
+<shape xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="ExtraText"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <stroke
+        android:width="2dp"
+        android:color="#FDA2A1" />
+</shape>

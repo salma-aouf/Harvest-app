@@ -5,7 +5,475 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/gardenScene"
     tools:context=".Garden">
+
+    <ProgressBar
+        android:id="@+id/levelProg"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="125dp"
+        android:translationY="25dp"
+        android:minHeight="50dp"
+        android:minWidth="200dp"
+        android:max="500"
+        android:indeterminate="false"
+        android:scaleY="5"
+        android:translationZ="10dp"
+        android:progress="0" />
+
+    <ImageView
+        android:id="@+id/plotTest"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="500dp"
+        android:translationY="30dp"
+        android:translationZ="-10dp"
+        android:src="@mipmap/grass" />
+
+    <TextView
+        android:id="@+id/progressStatement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="15dp"
+        android:translationX="106dp"
+        android:text="You are 400 away from a new plant!"
+        android:textColor="#FDD6B7"
+        android:textSize="15dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="75dp"
+        android:translationX="93dp"
+        android:text="Click an empty plot to start your garden \n or a used plot to harvest your plant"
+        android:gravity="center"
+        android:textColor="#FDD6B7"
+        android:textSize="15dp"
+        android:translationZ="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/background2Button"
+        android:layout_width="400dp"
+        android:layout_height="125dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#328086"
+        android:translationZ="5dp"
+        android:drawableRight="@mipmap/points"
+        android:drawableLeft="@mipmap/level"/>
+
+    <Button
+        android:id="@+id/plot00Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="20dp"
+        android:background="@android:color/transparent" />
+
+
+    <Button
+        android:id="@+id/plot01Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="95dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot02Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="170dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot03Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="245dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot04Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="320dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot10Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="213dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot11Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="213dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot12Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="213dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot13Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="213dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot14Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="213dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot20Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="288dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot21Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="288dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot22Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="288dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot23Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="288dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot24Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="288dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot30Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="363dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot31Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="363dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot32Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="363dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot33Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="363dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot34Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="363dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot40Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="438dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot41Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="438dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot42Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="438dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot43Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="438dp"
+        android:background="@android:color/transparent" />
+
+    <Button
+        android:id="@+id/plot44Button"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="438dp"
+        android:background="@android:color/transparent" />
+
+    <ImageView
+        android:id="@+id/plot00"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="20dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot01"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="95dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot02"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="170dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot03"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="245dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot04"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationY="138dp"
+        android:translationX="320dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot10"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="213dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot11"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="213dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot12"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="213dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot13"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="213dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot14"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="213dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot20"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="288dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot21"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="288dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot22"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="288dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot23"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="288dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot24"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="288dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot30"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="363dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot31"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="363dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot32"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="363dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot33"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="363dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot34"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="363dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot40"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="20dp"
+        android:translationY="438dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot41"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="95dp"
+        android:translationY="438dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot42"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="170dp"
+        android:translationY="438dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot43"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="245dp"
+        android:translationY="438dp"
+        android:src="@mipmap/grass" />
+
+    <ImageView
+        android:id="@+id/plot44"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:translationX="320dp"
+        android:translationY="438dp"
+        android:src="@mipmap/grass" />
 
     <com.google.android.material.button.MaterialButton
         style="@style/Widget.AppCompat.Button.Colored"
@@ -30,7 +498,7 @@
         android:translationY="265dp"
         android:background="@android:color/transparent"
         android:translationZ="10dp"
-        android:drawableLeft="@mipmap/garden"/>
+        android:drawableLeft="@mipmap/greenplant"/>
 
     <Button
         android:id="@+id/calendarButton"
@@ -42,7 +510,7 @@
         android:translationY="265dp"
         android:translationZ="10dp"
         android:background="@android:color/transparent"
-        android:drawableLeft="@mipmap/home"/>
+        android:drawableLeft="@mipmap/homegrey"/>
 
     <Button
         android:id="@+id/challengeButton"
